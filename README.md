@@ -4,14 +4,14 @@ Creation of infrastructure in terraform (Vnet,subnet,load balancer, VMS,)
 - **Virtual Network (VNet)**:  
   - CIDR: `10.0.0.0/16`  
   - Subnets:
-    - `webapp-subnet` → 10.1.0.0/24 (hosts VM1 & VM2 for the web app)  Provisioning would be done elsewhere 
-    - `database-subnet` → 10.2.0.0/24 (hosts VM3 for the database)  Provisioning would be done elsewhere
+    - `webapp-subnet` → 10.0.2.0/24 (hosts VM1 & VM2 for the web app)  Provisioning would be done elsewhere 
+    - `database-subnet` → 10.0.3.0/24 (hosts VM3 for the database)  Provisioning would be done elsewhere
 
 - **Network Interfaces (NICs)**:  
   - Static private IPs assigned to each VM:
-    - VM1 → 10.1.0.5  
-    - VM2 → 10.1.0.6  
-    - VM3 → 10.2.0.5  
+    - VM1 → 10.0.2.5  
+    - VM2 → 10.0.2.6  
+    - VM3 → 10.0.3.5  
 
 - **Virtual Machines**:  
   - 3 Linux VMs (Ubuntu 20.04 LTS Gen2) > Size can be changed 
